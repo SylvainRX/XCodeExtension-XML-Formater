@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E48F30D6216E8A9100B1C5FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F30D5216E8A9100B1C5FA /* AppDelegate.swift */; };
+		E48F30D8216E8A9100B1C5FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F30D7216E8A9100B1C5FA /* ViewController.swift */; };
+		E48F30DA216E8A9200B1C5FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48F30D9216E8A9200B1C5FA /* Assets.xcassets */; };
+		E48F30DD216E8A9200B1C5FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48F30DB216E8A9200B1C5FA /* Main.storyboard */; };
+		E48F30EC216E8AA700B1C5FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48F30EB216E8AA700B1C5FA /* Cocoa.framework */; };
+		E48F30EF216E8AA700B1C5FA /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F30EE216E8AA700B1C5FA /* SourceEditorExtension.swift */; };
+		E48F30F1216E8AA700B1C5FA /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F30F0216E8AA700B1C5FA /* SourceEditorCommand.swift */; };
+		E48F30F6216E8AA700B1C5FA /* Format XML.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E48F30E9216E8AA700B1C5FA /* Format XML.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E48F30F4216E8AA700B1C5FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E48F30CA216E8A9100B1C5FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E48F30E8216E8AA700B1C5FA;
+			remoteInfo = "XML Formater Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E48F30FA216E8AA700B1C5FA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E48F30F6216E8AA700B1C5FA /* Format XML.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E48F30D2216E8A9100B1C5FA /* Xcode XML Formater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xcode XML Formater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48F30D5216E8A9100B1C5FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E48F30D7216E8A9100B1C5FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E48F30D9216E8A9200B1C5FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E48F30DC216E8A9200B1C5FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E48F30DE216E8A9200B1C5FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48F30DF216E8A9200B1C5FA /* Xcode_XML_Formater.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xcode_XML_Formater.entitlements; sourceTree = "<group>"; };
+		E48F30E9216E8AA700B1C5FA /* Format XML.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Format XML.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48F30EB216E8AA700B1C5FA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E48F30EE216E8AA700B1C5FA /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		E48F30F0216E8AA700B1C5FA /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		E48F30F2216E8AA700B1C5FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48F30F3216E8AA700B1C5FA /* XML_Formater_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XML_Formater_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E48F30CF216E8A9100B1C5FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48F30E6216E8AA700B1C5FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48F30EC216E8AA700B1C5FA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E48F30C9216E8A9100B1C5FA = {
+			isa = PBXGroup;
+			children = (
+				E48F30D4216E8A9100B1C5FA /* Xcode XML Formater */,
+				E48F30ED216E8AA700B1C5FA /* XML Formater Extension */,
+				E48F30EA216E8AA700B1C5FA /* Frameworks */,
+				E48F30D3216E8A9100B1C5FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E48F30D3216E8A9100B1C5FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E48F30D2216E8A9100B1C5FA /* Xcode XML Formater.app */,
+				E48F30E9216E8AA700B1C5FA /* Format XML.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E48F30D4216E8A9100B1C5FA /* Xcode XML Formater */ = {
+			isa = PBXGroup;
+			children = (
+				E48F30D5216E8A9100B1C5FA /* AppDelegate.swift */,
+				E48F30D7216E8A9100B1C5FA /* ViewController.swift */,
+				E48F30D9216E8A9200B1C5FA /* Assets.xcassets */,
+				E48F30DB216E8A9200B1C5FA /* Main.storyboard */,
+				E48F30DE216E8A9200B1C5FA /* Info.plist */,
+				E48F30DF216E8A9200B1C5FA /* Xcode_XML_Formater.entitlements */,
+			);
+			path = "Xcode XML Formater";
+			sourceTree = "<group>";
+		};
+		E48F30EA216E8AA700B1C5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E48F30EB216E8AA700B1C5FA /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E48F30ED216E8AA700B1C5FA /* XML Formater Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E48F30EE216E8AA700B1C5FA /* SourceEditorExtension.swift */,
+				E48F30F0216E8AA700B1C5FA /* SourceEditorCommand.swift */,
+				E48F30F2216E8AA700B1C5FA /* Info.plist */,
+				E48F30F3216E8AA700B1C5FA /* XML_Formater_Extension.entitlements */,
+			);
+			path = "XML Formater Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E48F30D1216E8A9100B1C5FA /* Xcode XML Formater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48F30E2216E8A9200B1C5FA /* Build configuration list for PBXNativeTarget "Xcode XML Formater" */;
+			buildPhases = (
+				E48F30CE216E8A9100B1C5FA /* Sources */,
+				E48F30CF216E8A9100B1C5FA /* Frameworks */,
+				E48F30D0216E8A9100B1C5FA /* Resources */,
+				E48F30FA216E8AA700B1C5FA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E48F30F5216E8AA700B1C5FA /* PBXTargetDependency */,
+			);
+			name = "Xcode XML Formater";
+			productName = "Xcode XML Formater";
+			productReference = E48F30D2216E8A9100B1C5FA /* Xcode XML Formater.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E48F30E8216E8AA700B1C5FA /* Format XML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48F30F7216E8AA700B1C5FA /* Build configuration list for PBXNativeTarget "Format XML" */;
+			buildPhases = (
+				E48F30E5216E8AA700B1C5FA /* Sources */,
+				E48F30E6216E8AA700B1C5FA /* Frameworks */,
+				E48F30E7216E8AA700B1C5FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Format XML";
+			productName = "XML Formater Extension";
+			productReference = E48F30E9216E8AA700B1C5FA /* Format XML.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E48F30CA216E8A9100B1C5FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Sylvain Roux";
+				TargetAttributes = {
+					E48F30D1216E8A9100B1C5FA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					E48F30E8216E8AA700B1C5FA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = E48F30CD216E8A9100B1C5FA /* Build configuration list for PBXProject "Xcode XML Formater" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E48F30C9216E8A9100B1C5FA;
+			productRefGroup = E48F30D3216E8A9100B1C5FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E48F30D1216E8A9100B1C5FA /* Xcode XML Formater */,
+				E48F30E8216E8AA700B1C5FA /* Format XML */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E48F30D0216E8A9100B1C5FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48F30DA216E8A9200B1C5FA /* Assets.xcassets in Resources */,
+				E48F30DD216E8A9200B1C5FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48F30E7216E8AA700B1C5FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E48F30CE216E8A9100B1C5FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48F30D8216E8A9100B1C5FA /* ViewController.swift in Sources */,
+				E48F30D6216E8A9100B1C5FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48F30E5216E8AA700B1C5FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48F30EF216E8AA700B1C5FA /* SourceEditorExtension.swift in Sources */,
+				E48F30F1216E8AA700B1C5FA /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E48F30F5216E8AA700B1C5FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E48F30E8216E8AA700B1C5FA /* Format XML */;
+			targetProxy = E48F30F4216E8AA700B1C5FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E48F30DB216E8A9200B1C5FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E48F30DC216E8A9200B1C5FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E48F30E0216E8A9200B1C5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E48F30E1216E8A9200B1C5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E48F30E3216E8A9200B1C5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Xcode XML Formater/Xcode_XML_Formater.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QAUCZ4UQNU;
+				INFOPLIST_FILE = "Xcode XML Formater/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SylvainRX.Xcode-XML-Formater";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		E48F30E4216E8A9200B1C5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Xcode XML Formater/Xcode_XML_Formater.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QAUCZ4UQNU;
+				INFOPLIST_FILE = "Xcode XML Formater/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SylvainRX.Xcode-XML-Formater";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		E48F30F8216E8AA700B1C5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "XML Formater Extension/XML_Formater_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QAUCZ4UQNU;
+				INFOPLIST_FILE = "XML Formater Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SylvainRX.Xcode-XML-Formater.XML-Formater-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		E48F30F9216E8AA700B1C5FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "XML Formater Extension/XML_Formater_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QAUCZ4UQNU;
+				INFOPLIST_FILE = "XML Formater Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SylvainRX.Xcode-XML-Formater.XML-Formater-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E48F30CD216E8A9100B1C5FA /* Build configuration list for PBXProject "Xcode XML Formater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48F30E0216E8A9200B1C5FA /* Debug */,
+				E48F30E1216E8A9200B1C5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48F30E2216E8A9200B1C5FA /* Build configuration list for PBXNativeTarget "Xcode XML Formater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48F30E3216E8A9200B1C5FA /* Debug */,
+				E48F30E4216E8A9200B1C5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48F30F7216E8AA700B1C5FA /* Build configuration list for PBXNativeTarget "Format XML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48F30F8216E8AA700B1C5FA /* Debug */,
+				E48F30F9216E8AA700B1C5FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E48F30CA216E8A9100B1C5FA /* Project object */;
+}
